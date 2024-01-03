@@ -33,7 +33,7 @@ const ProjectsSection = async () => {
       <div id='projects' className='pt-20'>
         <h2 className='text-center text-4xl font-bold text-white'>My Projects</h2>
         <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
-         
+
         </div>
 
         <div className='grid md:grid-cols-3 gap-8 md:gap-12 mt-0 md:mt-3'>

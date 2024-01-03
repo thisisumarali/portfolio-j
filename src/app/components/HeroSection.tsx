@@ -1,19 +1,16 @@
-'use client'
-import React from 'react'
-import Image from 'next/image'
+"use client"
+import React from 'react';
+import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 
-
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
     return (
         <section className='sm:py-16'>
             <div className='grid grid-cols-1 sm:grid-cols-12'>
-
                 <div className='sm:place-self-start col-span-8 text-center sm:text-left place-self-center jsu'>
                     <h1 className='text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal   font-extrabold'>
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-red-700 mb-5'>Hello, I am{""}
-                        </span>
-                        <br />
+                        </span> <br />
                         <TypeAnimation
                             sequence={[
                                 'Umar Khan',
@@ -28,7 +25,8 @@ const HeroSection = () => {
                             wrapper="span"
                             speed={50}
                             repeat={Infinity}
-                        /></h1>
+                        />
+                    </h1>
                     <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
                         Passionate web and app developer with a keen eye for UI/UX design, crafting digital experiences that seamlessly blend functionality and aesthetics to elevate user engagement and satisfaction.
                     </p>
@@ -56,7 +54,7 @@ const HeroSection = () => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 export default HeroSection;
